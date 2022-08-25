@@ -1,0 +1,124 @@
+@import "fonts";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  width: 100wh;
+  height: 100vh;
+  background: url("/images/main-bg.png") no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1.heading-1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+header {
+  .container {
+    position: relative;
+  }
+}
+
+.nav {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 14px;
+  position: absolute;
+  padding-top: 18px;
+  display: flex;
+  width: 100%;
+  &-logo {
+    margin-top: 5px;
+  }
+  &_menu {
+    margin-left: 66px;
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    gap: 30px;
+    &-list {
+      width: 190px;
+      list-style: none;
+    }
+    &-item {
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+    &-link {
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+  &_contact {
+    width: 180px;
+    text-align: right;
+    a {
+      color: #FFF;
+      text-decoration: none;
+    }
+    &-phone {
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 18px;
+    }
+    &-mail {
+      display: block;
+      margin-top: 5px;
+    }
+    &-callback {
+      display: block;
+      margin-top: 10px;
+      color: $yellow;
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.hero {
+  padding: 0 15px;
+  padding-top: 220px;
+  background: url("../images/hero-bg.png") no-repeat center;
+  background-size: cover;
+  min-height: 858px;
+  &_image {
+    position: absolute;
+    bottom: 0;
+
+  }
+  &_left {
+    width: 630px;
+    h1 {
+      color: #FFF;
+      span {
+        display: block;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 16px;
+        width: 50%;
+        margin-top: 20px;
+        padding-left: 20px;
+        border-left: 3px solid $yellow;
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
