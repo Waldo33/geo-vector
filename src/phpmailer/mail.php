@@ -22,7 +22,7 @@ foreach ( $_POST as $key => $value ) {
 $body = "<table style='width: 100%'>$body</table>";
 
 //Настройки PHPMailer
-$mail = new \PHPMailer\PHPMailer\PHPMailer();
+$mail = new PHPMailer();
 
 try {
     $mail->isSMTP();
