@@ -52,6 +52,11 @@ function libs_js() {
         .pipe(dest('dist/libs'))
 }
 
+function phpmailer() {
+    return src('src/phpmailer/**.php')
+        .pipe(dest('dist/php'))
+}
+
 function fonts() {
     return src('src/fonts/**')
         .pipe(dest('dist/fonts'))
@@ -74,6 +79,6 @@ function serve() {
     watch('src/images/**', series(images)).on('change', sync.reload)
 }
 
-exports.build = series(clear, libs_js, js, scss, html, images, fonts)
-exports.serve = series(clear, libs_js, js, scss, html, images, fonts, serve)
+exports.build = series(clear, libs_js, js, scss, html, images, fonts, phpmailer)
+exports.serve = series(clear, libs_js, js, scss, html, images, fonts, phpmailer, serve)
 exports.clear = clear
