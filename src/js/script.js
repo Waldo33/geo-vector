@@ -68,6 +68,7 @@ new window.JustValidate('#form', {
         xhr.onreadystatechange = function () {
             if(xhr.readyState === 4) {
                 if(xhr.status === 200) {
+                    document.querySelector('.modal').insertAdjacentHTML('beforeend', '<div style="margin-top:5px; color: #FFF;">Сообщение успешно отправлено!</div>')
                     console.log('Отправлено')
                 }
             }
