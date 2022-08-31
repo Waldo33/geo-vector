@@ -76,6 +76,7 @@ function serve() {
     watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
     watch('src/scss/components/**.scss', series(scss)).on('change', sync.reload)
     watch('src/js/**.js', series(js)).on('change', sync.reload)
+    watch('src/phpmailer/**.php', series(phpmailer)).on('change', sync.reload)
     watch('src/images/**', series(images)).on('change', sync.reload)
 }
 
