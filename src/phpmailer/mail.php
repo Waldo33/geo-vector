@@ -29,16 +29,12 @@ try {
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth = true;
 
-    //    $mail->Host = 'smtp.gmail.com';
-//    $mail->Username = 'evgenijtser@gmail.com';
-//    $mail->Password = 'qptdretvfzshzuam';
     $mail->Host = 'mail.tserkovnikov.ru';
     $mail->Username = 'no-reply@tserkovnikov.ru';
     $mail->Password = 'MagickWeb123';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-//    $mail->setFrom('evgenijtser@gmail.com', 'Заявка с вашего сайта');
     $mail->setFrom('no-reply@tserkovnikov.ru', 'Заявка с вашего сайта');
 
     $mail->addAddress('evgenijtser@gmail.com');
