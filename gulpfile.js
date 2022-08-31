@@ -46,6 +46,12 @@ function js() {
         .pipe(dest('dist'))
 }
 
+function libs_js() {
+    return src('src/js/libs/**.js')
+        .pipe(uglify())
+        .pipe(dest('dist/libs'))
+}
+
 function fonts() {
     return src('src/fonts/**')
         .pipe(dest('dist/fonts'))
@@ -68,6 +74,6 @@ function serve() {
     watch('src/images/**', series(images)).on('change', sync.reload)
 }
 
-exports.build = series(clear, js, scss, html, images, fonts)
-exports.serve = series(clear, js, scss, html, images, fonts, serve)
+exports.build = series(clear, libs_js, js, scss, html, images, fonts)
+exports.serve = series(clear, libs_js, js, scss, html, images, fonts, serve)
 exports.clear = clear

@@ -41,7 +41,7 @@
             <div class="nav_contact">
                 <a class="nav_contact-phone" href="tel:+79129223586">+ 7 (912) 922-35-86</a>
                 <a class="nav_contact-mail" href="mailto:vector_geo@mail.ru">vector_geo@mail.ru</a>
-                <span class="nav_contact-callback"><a class="yellow text-underline" href="#">Перезвонить вам?</a></span>
+                <span class="nav_contact-callback callback-button"><a class="yellow text-underline" href="#">Перезвонить вам?</a></span>
             </div>
             <div class="nav_burger">
                 <div class="nav_burger-line"></div>
@@ -71,7 +71,22 @@
         <div class="nav_contact">
             <a class="nav_contact-phone" href="tel:+79129223586">+ 7 (912) 922-35-86</a>
             <a class="nav_contact-mail" href="mailto:vector_geo@mail.ru">vector_geo@mail.ru</a>
-            <span class="nav_contact-callback"><a class="yellow text-underline" href="#">Перезвонить вам?</a></span>
+            <span class="nav_contact-callback"><a class="yellow text-underline callback-button-2" href="#">Перезвонить вам?</a></span>
         </div>
     </nav>
 </header>
+
+<div class="fade">
+    <div class="modal">
+        <h4>Оставьте свои данные и мы Вам перезвоним!</h4>
+        <form action="#" method="post" id="form" enctype="multipart/form-data">
+            <label class="form-label">
+                <input type="text" name="name" data-validate-field="name" placeholder="Введите имя">
+            </label>
+            <label class="form-label">
+                <input type="tel" name="tel" data-validate-field="tel" placeholder="Введите телефон">
+            </label>
+            <button class="btn btn-yellow" type="submit">Бесплатная консультация</button>
+        </form>
+    </div>
+</div>

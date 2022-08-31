@@ -156,3 +156,12 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .our_services {
+    &-list {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+}
