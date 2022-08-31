@@ -73,7 +73,7 @@ new window.JustValidate('#form', {
             }
         }
 
-        xhr.open('POST', 'mail.php', true);
+        xhr.open('POST', 'php/mail.php', true);
         xhr.send(formData);
 
         thisForm.reset();
