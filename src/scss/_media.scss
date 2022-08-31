@@ -1,0 +1,158 @@
+@media screen and (max-width: 1310px) {
+  .about {
+    min-height: 800px;
+    padding-bottom: 250px;
+    &_citate {
+      &-photo {
+        //left: 10px;
+        //top: 50%;
+        //transform: translateY(-50%);
+      }
+    }
+    &_compass {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    &_right {
+      width: 50%;
+      &-list {
+        //flex-direction: column;
+        //align-items: baseline;
+        flex: 1;
+      }
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+  .our_services {
+    &-list {
+      grid-template-columns: 1.5fr 1fr 2fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 30px;
+    }
+    &-discount {
+      left: 34.5%;
+    }
+  }
+  .hero {
+    &_right {
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .hero {
+    .container {
+      display: flex;
+      flex-direction: column;
+      //justify-content: center;
+      //align-items: center;
+    }
+    &_left {
+      width: 100%;
+    }
+    &_right {
+      margin-top: 50px;
+      position: static;
+      width: 100%;
+    }
+  }
+  .nav {
+    //justify-content: space-between;
+    &_menu {
+      &-list {
+        width: 33%;
+      }
+    }
+    &_contact {
+      width: 250px;
+      &-phone {
+        //font-size: 17px;
+      }
+    }
+  }
+  .about {
+    &_citate {
+      left: 0;
+      padding: 15px;
+      border-radius: 0;
+      //display: flex;
+      &-photo {
+        //position: static;
+        //margin: 0 auto;
+        //display: inline-block;
+      }
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      //justify-content: left;
+      //align-items: baseline;
+      gap: 10px;
+
+    }
+    &_compass {
+      margin: 0 auto;
+      width: 80%;
+      height: 30%;
+      img {
+        width: 100%;
+        margin: 0;
+        display: block;
+      }
+    }
+    &_right {
+      margin: 0;
+      text-align: left;
+      //flex: 1;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  h1.heading-1 {
+    font-size: 30px;
+  }
+  .our_services {
+    padding-bottom: 300px;
+    &-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      //grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 1fr;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+    }
+    &-discount {
+      left: 0;
+      border-radius: 0;
+      background: #FFF;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    justify-content: space-between;
+    &_mobile {
+      display: block;
+      .nav_contact {
+        display: block;
+      }
+    }
+    &_menu {
+      display: none;
+    }
+    &_contact {
+      display: none;
+    }
+    &_burger {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.heading-1 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.heading-2 {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  span {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.sub-header {
+  margin-top: 10px;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.blue {
+  color: $blue;
+}
+
+.bg-light-green {
+  background: $light-green;
+}
+
+.bg-blue {
+  background: $blue;
+}
+
+.text-underline {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  border-bottom: 2px solid;
+  padding-bottom: 0;
+}
+
+.left-line {
+  position: relative;
+  display: block;
+  &:first-line {
+    line-height: 100%;
+  }
+  &:before {
+    content: '';
+    display: block;
+    border-left: 3px solid $yellow;
+    height: 95%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+}
+
+.horizontal_line {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  //width: 49.7%;
+  left: 50.3%;
+}
+
+small {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #595A52;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  transition: all $transition-time ease-in-out;
+  &:hover {
+    color: $dark-green;
+  }
+  &:active {
+    color: $dark-yellow;
+  }
+  &:disabled {
+    opacity: 0.7;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  height: 100vh;
+}
